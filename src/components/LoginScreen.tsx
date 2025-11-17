@@ -145,29 +145,6 @@ export function LoginScreen({ onBack, onLogin }: LoginScreenProps) {
             Sign In
           </h2>
           
-          {/* Demo Credentials */}
-          <div className="bg-[#2C2C2C] rounded-[12px] p-4 mb-6 border border-[#505050]">
-            <p className="text-[#A0A0A0] text-[12px] mb-3 font-semibold" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              QUICK LOGIN (DEMO):
-            </p>
-            <div className="space-y-2">
-              <button onClick={() => quickLogin('resident')} 
-                className="w-full text-left text-[12px] text-[#F0F0F0] hover:text-[#FF4500] p-2 rounded-[8px] bg-[#1E1E1E] transition-colors"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                👤 Resident: juan@resident.com
-              </button>
-              <button onClick={() => quickLogin('bfp')} 
-                className="w-full text-left text-[12px] text-[#F0F0F0] hover:text-[#FF4500] p-2 rounded-[8px] bg-[#1E1E1E] transition-colors"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                🚒 BFP/LGU: santos@bfp.gov.ph
-              </button>
-              <button onClick={() => quickLogin('admin')} 
-                className="w-full text-left text-[12px] text-[#F0F0F0] hover:text-[#FF4500] p-2 rounded-[8px] bg-[#1E1E1E] transition-colors"
-                style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                ⚙️ Admin: admin@siklab.gov.ph
-              </button>
-            </div>
-          </div>
 
           <form onSubmit={handleSignIn} className="space-y-6">
             <div>
